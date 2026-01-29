@@ -7,7 +7,7 @@ This add-on runs the Clawdbot Gateway on Home Assistant OS, providing secure rem
 - **Gateway** runs locally on the HA host (binds to loopback by default)
 - **SSH server** provides secure remote access for Clawdbot.app or the CLI
 - **Persistent storage** under `/config/clawdbot` survives add-on updates
-- On first start, runs `clawdbot setup` to create a minimal config
+- On first start, runs `moltbot setup` to create a minimal config
 
 ## Installation
 
@@ -36,9 +36,9 @@ This add-on runs the Clawdbot Gateway on Home Assistant OS, providing secure rem
 
 The add-on performs these steps on startup:
 
-1. Clones or updates the Clawdbot repo into `/config/clawdbot/clawdbot-src`
+1. Clones or updates the Moltbot repo into `/config/clawdbot/clawdbot-src`
 2. Installs dependencies and builds the gateway
-3. Runs `clawdbot setup` if no config exists
+3. Runs `moltbot setup` if no config exists
 4. Ensures `gateway.mode=local` if missing
 5. Starts the gateway
 
@@ -49,13 +49,13 @@ SSH into the add-on and run the configurator:
 ```bash
 ssh -p 2222 root@<ha-host>
 cd /config/clawdbot/clawdbot-src
-pnpm clawdbot onboard
+pnpm moltbot onboard
 ```
 
 Or use the shorter flow:
 
 ```bash
-pnpm clawdbot configure
+pnpm moltbot configure
 ```
 
 The gateway auto-reloads config changes. Restart the add-on only if you change SSH keys or build settings:
@@ -79,7 +79,7 @@ Then point Clawdbot.app or the CLI at `ws://127.0.0.1:18789`.
 ### Bind Mode
 
 Configure bind mode via the Clawdbot CLI (over SSH), not in the add-on options.
-Use `pnpm clawdbot configure` or `pnpm clawdbot onboard` to set it in `clawdbot.json`.
+Use `pnpm moltbot configure` or `pnpm moltbot onboard` to set it in `clawdbot.json`.
 
 ## Data Locations
 
@@ -121,8 +121,8 @@ The first boot runs a full build and may take several minutes. Subsequent starts
 
 ## Links
 
-- [Clawdbot](https://github.com/clawdbot/clawdbot) — Main repository
-- [Documentation](https://docs.clawd.bot) — Full documentation
-- [Community](https://discord.com/invite/clawd) — Discord server
+- [Moltbot](https://github.com/moltbot/moltbot) — Main repository
+- [Documentation](https://docs.molt.bot) — Full documentation
+- [Community](https://discord.gg/moltbot) — Discord server
 - [gog CLI](https://gogcli.sh) — Google Workspace CLI
 - [GitHub CLI](https://cli.github.com) — GitHub CLI

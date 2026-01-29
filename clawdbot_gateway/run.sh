@@ -179,7 +179,7 @@ log "building control UI"
 pnpm ui:build
 
 if [ ! -f "${CLAWDBOT_CONFIG_PATH}" ]; then
-  pnpm clawdbot setup --workspace "${WORKSPACE_DIR}"
+  pnpm moltbot setup --workspace "${WORKSPACE_DIR}"
 else
   log "config exists; skipping clawdbot setup"
 fi
@@ -373,7 +373,7 @@ trap forward_usr1 USR1
 trap shutdown_child TERM INT
 
 while true; do
-  pnpm clawdbot "${ARGS[@]}" &
+  pnpm moltbot "${ARGS[@]}" &
   child_pid=$!
   start_log_tail "${LOG_FILE}"
   set +e

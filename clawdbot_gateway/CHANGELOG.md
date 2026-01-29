@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.16
+- Fix: update CLI command from `clawdbot` to `moltbot` after upstream rename.
+- Fix: update default repo URL to `https://github.com/moltbot/moltbot.git`.
+- Docs: update all references to reflect Moltbot rename.
+
 ## 0.2.15
 - Fix: install dev dependencies so gateway builds include tsc. (#9)
 

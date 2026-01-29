@@ -1,11 +1,11 @@
 # Clawdbot Gateway
 
-Run [Clawdbot](https://github.com/clawdbot/clawdbot) on Home Assistant OS with secure SSH tunnel access.
+Run [Moltbot](https://github.com/moltbot/moltbot) (formerly Clawdbot) on Home Assistant OS with secure SSH tunnel access.
 
 ## Features
 
-- 🦞 **Clawdbot Gateway** — AI agent with messaging, automation, and more
-- 🔒 **SSH Tunnel** — Secure remote access for Clawdbot.app or CLI
+- 🦞 **Moltbot Gateway** — AI agent with messaging, automation, and more
+- 🔒 **SSH Tunnel** — Secure remote access for Moltbot.app or CLI
 - 📦 **Persistent Storage** — All data survives add-on updates
 - 🛠️ **Included Tools** — gog (Google Workspace), gh (GitHub), hass-cli
 
@@ -18,6 +18,6 @@ Run [Clawdbot](https://github.com/clawdbot/clawdbot) on Home Assistant OS with s
 
 ## Links
 
-- [Documentation](https://docs.clawd.bot)
-- [GitHub](https://github.com/clawdbot/clawdbot)
-- [Discord](https://discord.com/invite/clawd)
+- [Documentation](https://docs.molt.bot)
+- [GitHub](https://github.com/moltbot/moltbot)
+- [Discord](https://discord.gg/moltbot)
